@@ -1,0 +1,141 @@
+.header--date {
+    float: left;
+    padding: 13px 0;
+}
+
+.header--search-bar {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    padding: 5px 0;
+    z-index: 0;
+}
+
+.header--search-bar:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #45c6a6;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.header--search-bar ::-webkit-input-placeholder { color: #fff; }
+.header--search-bar ::-moz-placeholder { color: #fff; }
+.header--search-bar :-ms-input-placeholder { color: #fff; }
+.header--search-bar :-moz-placeholder { color: #fff; }
+
+.header--search-bar .form-control {
+    padding: 0 30px;
+    color: #fff;
+    background-color: transparent;
+    border-width: 0;
+}
+
+.header--search-bar .btn-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 13px 30px;
+    border-width: 0;
+    color: #fff;
+}
+
+.header--social {
+    float: right;
+}
+
+.header--social > span {
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.header--social > .nav {
+    display: inline-block;
+    margin-right: -10px;
+    vertical-align: middle;
+}
+
+.header--social > .nav > li > a {
+    padding: 13px 10px;
+}
+
+/* 5.2. HEADER NAVBAR */
+.header--navbar {
+    margin-bottom: 60px;
+    border-radius: 0;
+    border-width: 0 0 1px;
+    border-color: #45c6a6;
+}
+
+.header--logo {
+    padding: 60px 0 54px;
+    text-align: center;
+}
+
+.header--logo a {
+    display: inline-block;
+}
+
+.header--navbar .navbar-toggle {
+    margin: 0 15px 20px;
+    border-color: #45c6a6;
+    background-color: #45c6a6;
+    border-radius: 0;
+    transition: border-color .25s, background-color .25s ease-in-out;
+}
+
+.header--navbar .navbar-toggle.collapsed {
+    border-color: #333;
+    background-color: transparent;
+}
+
+.header--navbar .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.header--navbar .navbar-toggle.collapsed .icon-bar {
+    background-color: #333;
+}
+
+.header--nav-links {
+    padding: 0 0 18px;
+    color: #393939;
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header--nav-links > li {
+    float: none;
+    display: inline-block;
+}
+
+.header--nav-links > li > a {
+    padding: 0 25px;
+    border-right: 1px solid #393939;
+    line-height: 16px;
+}
+
+.header--nav-links > li:last-child > a {
+    border-right-width: 0;
+}
+
+.header--nav-links > .dropdown > a:hover
+.header--nav-links > .dropdown > a:focus,
+.header--nav-links > .dropdown.open > a,
+.header--nav-links > .dropdown.open > a:hover
+.header--nav-links > .dropdown.open > a:focus {
+    border-color: #393939;
+}
+
+.header--nav-links > li > a > .fa {
+    margin-left: 8px;
+}
