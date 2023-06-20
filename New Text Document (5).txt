@@ -1,0 +1,10 @@
+ foreach (var item in rules)
+            {
+                if ((rulesRationalizeFilterInputModel.RuleID == true && !string.IsNullOrEmpty(item.RuleId)) || (rulesRationalizeFilterInputModel.Limits == true && !string.IsNullOrEmpty(item.Limits)) || (rulesRationalizeFilterInputModel.Attribute == true && !string.IsNullOrEmpty(item.Attribute)) || ((rulesRationalizeFilterInputModel.Template == true && !string.IsNullOrEmpty(item.Template))) ||
+                  (rulesRationalizeFilterInputModel.Expression == true && !string.IsNullOrEmpty(item.Expression)) || (rulesRationalizeFilterInputModel.Pre == true && !string.IsNullOrEmpty(item.Pre)) || (rulesRationalizeFilterInputModel.Post == true && !string.IsNullOrEmpty(item.Post)) ||
+                  (rulesRationalizeFilterInputModel.EoD == true && !string.IsNullOrEmpty(item.EoD)) || (rulesRationalizeFilterInputModel.Currency == true && !string.IsNullOrEmpty(item.Currency)) || (rulesRationalizeFilterInputModel.RuleName == true && !string.IsNullOrEmpty(item.RuleName)) ||
+                  (rulesRationalizeFilterInputModel.SeverityName == true && !string.IsNullOrEmpty(item.SeverityName)) || (rulesRationalizeFilterInputModel.NoOfAccountsAttached == true && !string.IsNullOrEmpty(item.NoOfAccountsAttached)))
+                {
+                    rulesAfterFilter.Add(item);
+                }
+}
